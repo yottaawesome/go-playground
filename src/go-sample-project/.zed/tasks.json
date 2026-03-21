@@ -1,0 +1,31 @@
+// Zed task definitions — run these from the command palette (cmd/ctrl+shift+p → "task: spawn").
+// See https://zed.dev/docs/tasks for reference.
+[
+  {
+    "label": "Go: Build",
+    "command": "go",
+    "args": ["build", "-o", "bin/bookserver", "./cmd/bookserver"],
+    "use_new_terminal": false
+  },
+  {
+    "label": "Go: Run Server",
+    "command": "go",
+    "args": ["run", "./cmd/bookserver"],
+    "use_new_terminal": true,
+    "env": {
+      "PORT": "8080"
+    }
+  },
+  {
+    "label": "Go: Test All",
+    "command": "go",
+    "args": ["test", "-v", "-race", "./..."],
+    "use_new_terminal": false
+  },
+  {
+    "label": "Go: Vet",
+    "command": "go",
+    "args": ["vet", "./..."],
+    "use_new_terminal": false
+  }
+]

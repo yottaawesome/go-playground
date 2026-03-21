@@ -1,0 +1,22 @@
+# Compiled binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test cache and coverage
+*.test
+*.out
+coverage.html
+
+# IDE / editor files (we commit .vscode/ and .zed/ on purpose)
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+{
+  // Recommend the official Go extension for anyone opening this project.
+  "recommendations": [
+    "golang.go"
+  ]
+}

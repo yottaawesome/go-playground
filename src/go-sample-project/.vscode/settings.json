@@ -1,0 +1,43 @@
+{
+  // ---------- Editor defaults ----------
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "golang.go",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ---------- Go extension ----------
+  // Use gopls (the official Go language server) for intellisense.
+  "go.useLanguageServer": true,
+
+  // Lint on save with golangci-lint if installed, otherwise fall back to go vet.
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "package",
+
+  // Run tests with the race detector enabled.
+  "go.testFlags": ["-race", "-v"],
+
+  // Enable code coverage display when running tests.
+  "go.coverOnSave": false,
+  "go.coverageDecorator": {
+    "type": "gutter"
+  },
+
+  // Build tags (add custom tags here if needed).
+  "go.buildTags": "",
+
+  // ---------- File associations ----------
+  "files.associations": {
+    "*.go": "go",
+    "go.mod": "go.mod",
+    "go.sum": "go.sum",
+    "Makefile": "makefile"
+  },
+
+  // ---------- Search exclusions ----------
+  "search.exclude": {
+    "bin/": true,
+    "vendor/": true
+  }
+}

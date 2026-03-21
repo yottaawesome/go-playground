@@ -1,0 +1,52 @@
+// Zed editor settings for the Go sample project.
+// See https://zed.dev/docs/configuring-zed for reference.
+{
+  // ---------- Formatting ----------
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "tab_size": 4,
+  "hard_tabs": true,
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+
+  // ---------- Language server (gopls) ----------
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true
+        },
+        "analyses": {
+          "unusedparams": true,
+          "shadow": true,
+          "nilness": true
+        },
+        "staticcheck": true,
+        "completeUnimported": true,
+        "usePlaceholders": true,
+        "semanticTokens": true
+      }
+    }
+  },
+
+  // ---------- Language overrides ----------
+  "languages": {
+    "Go": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "tab_size": 4,
+      "hard_tabs": true
+    }
+  },
+
+  // ---------- File scan exclusions ----------
+  "file_scan_exclusions": [
+    "bin/**",
+    "vendor/**"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "go.lintTool": "staticcheck",
+  "go.lintOnSave": "workspace",
+  "gopls": {
+    "ui.semanticTokens": true,
+    "hints": {
+      "assignVariableTypes": true,
+      "compositeLiteralFields": true,
+      "constantValues": true,
+      "functionTypeParameters": true,
+      "parameterNames": true,
+      "rangeVariableTypes": true
+    }
+  }
+}
